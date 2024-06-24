@@ -5,4 +5,9 @@ app_name = "core"
 
 urlpatterns = [
     path("", views.index),
+    path("about", views.about),
+    path("sproduct", views.sproduct),
+    path("contact", views.contact),
+    path("cart", views.cart),
+    path("shop", views.shop),
 ]
