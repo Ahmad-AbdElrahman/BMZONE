@@ -1,0 +1,68 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block content %}
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg></a></li>
+            </ul>   
+         </div>
+         <div id="mobile">
+              <a href="cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-cart3" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg></a>
+              <svg id="bar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layout-text-sidebar" viewBox="0 0 16 16">
+                <path d="M3.5 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM3 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z"/>
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm12-1v14h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 0H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h9z"/>
+              </svg>
+
+         </div>
+
+    </section>
+    <section id="page-header" class="about-header">
+        <h2>#Know Us</h2>
+        <p>More Information Below</p>
+    </section>
+    <section id="about-head" class="section-p1">
+        <img src='{% static "static/assets/images/istockphoto-1086341762-612x612.jpg" %}' alt="">
+        <div>
+            <h2>Who We Are?</h2>
+            <p>We Are a Group of Enthusiastic civil Engineers Who Want to Improve the Procurement Process of Construction Material While Providing The Best Construction Material at the Best Price.</p>
+            <abbr title="">Try Our Website Now And Explore The Construction Tech World With Us</abbr>
+            
+            
+            <br><br>
+
+            <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%">Buy All The Materials That You Want at The Best Price With Free Delivery For Your First 5 Orders Above 1000$</marquee>
+        </div>
+
+    </section>
+    <section id="about-app" class="section-p1">
+        <h1>Download Our <a href="#">App</a></h1>
+    </section>
+    <section id="feature" class="section-p1 sec">
+        <div class="fe-box">
+            <img src='{% static "static/assets/images/5fa67b376084e378d68125bc_Free shipping (1).png" %}' alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src='{% static "images/order-online.png" %}' alt="">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src='{% static "static/assets/images/6475889.png" %}' alt="">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src='{% static "static/assets/images/Promotion-Planning-in-Inventory-Management.png" %}' alt="">
+            <h6>Promotions</h6>
+        </div>
+        <div class="fe-box">
+            <img src='{% static "static/assets/images/customer-support-24-7-technical-phone-vector-33281577.jpg" %}' alt="">
+            <h6>24/7 Support</h6>
+        </div>
+    </section>
+    {% endblock content %}
