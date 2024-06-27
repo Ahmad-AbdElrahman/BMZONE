@@ -1,5 +1,5 @@
 
-# Construction Material Procurement Web Application
+# Construction Material Procurement Web Application (BMZONE)
 
 ## Overview
 
@@ -30,7 +30,7 @@ Our proposed application bridges this gap by providing a user-friendly platform 
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/yourusername/construction-material-procurement.git
-   cd construction-material-procurement
+   cd BMZONE
    ```
 
 2. **Build and Run the Application Using Docker**
