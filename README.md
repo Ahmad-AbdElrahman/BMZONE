@@ -77,8 +77,8 @@ We welcome contributions to improve the platform. Please follow these steps to c
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
 
 ## Contact
 
-For any inquiries or support, please contact us at support@construction-material-procurement.com.
+For any inquiries or support, please contact us.
