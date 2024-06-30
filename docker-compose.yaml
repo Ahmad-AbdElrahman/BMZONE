@@ -1,0 +1,8 @@
+version: '3'
+services:
+  BMZONE:
+    Build: .
+    volumes:
+      - .:/BMZONE
+    ports:
+      - "8000:8000" 
