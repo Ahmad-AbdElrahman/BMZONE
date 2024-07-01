@@ -1,8 +1,10 @@
 version: '3'
 services:
-  BMZONE:
-    Build: .
+  bmzone:
+    build: .
+    image: bmzone
+    command: gunicorn BMZONE.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - .:/BMZONE
     ports:
-      - "8000:8000" 
+      - "8000:8000"
