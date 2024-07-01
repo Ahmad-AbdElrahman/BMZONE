@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-v!=%5l5(ib#u9tzwnc48a6oa6@g&b#d)c6ii$9jsnes=jgtbzb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['172.18.0.2','localhost','0.0.0.0','ahassanprog.tech']
 
 
 # Application definition
@@ -39,9 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "crispy_forms",
 
     # custom apps
     'core',
+    'userauths',
 ]
 
 MIDDLEWARE = [
@@ -138,6 +140,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 JAZZMIN_SETTINGS = {
     'site_header': "BMZONE",
-    'site_logo': "/assets/images/Logo.png",
+    'site_logo': "assets/images/Logo.png",
     'copyright': "BMZONE.com",
 }
+
+AUTH_USER_MODEL = 'userauths.User'
