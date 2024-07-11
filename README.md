@@ -93,13 +93,13 @@ The BMZONE is licensed under the terms of the GPL Open Source license and is ava
 
 Material Procurement and Supply Chain Management Systems:
 
-    Bnaia.com is a leading commercial material procurement software solution used in construction. While Bnaia.com offers a comprehensive suite of features, my application focuses specifically on the needs of the Egyptian construction market and provides a more user-friendly interface for material selection based on local availability.
-    Khamato.com is an open-source supply chain management platform that offers functionalities like supplier management and inventory tracking. While Khamato.com is broader in scope, some features could be complementary to my application's material procurement focus.
+Bnaia.com is a leading commercial material procurement software solution used in construction. While Bnaia.com offers a comprehensive suite of features, my application focuses specifically on the needs of the Egyptian construction market and provides a more user-friendly interface for material selection based on local availability.
+Khamato.com is an open-source supply chain management platform that offers functionalities like supplier management and inventory tracking. While Khamato.com is broader in scope, some features could be complementary to my application's material procurement focus.
 
 Resources for the Egyptian Construction Industry:
 
-    The Egyptian Construction Materials Information Center (ECMIC) [invalid URL removed] is a valuable resource for construction professionals in Egypt, providing industry news and technical information on construction materials.
-    The Construction Federation of Egypt (CFE) [invalid URL removed] is a professional organization representing the Egyptian construction sector. This could be a good platform to connect with potential users of my application.
+The Egyptian Construction Materials Information Center (ECMIC) is a valuable resource for construction professionals in Egypt, providing industry news and technical information on construction materials.
+The Construction Federation of Egypt (CFE) is a professional organization representing the Egyptian construction sector. This could be a good platform to connect with potential users of my application.
 
 ## Contact
 
