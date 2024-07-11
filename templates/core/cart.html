@@ -1,27 +1,6 @@
 {% extends 'partials/base.html' %}
 {% load static %}
 {% block content %}
-                <li><a href="/">Home</a></li>
-                <li><a href="shop">Shop</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="contact">Contact</a></li>
-                <li><a class="active" href="cart"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                  </svg></a></li>
-            </ul>   
-         </div>
-         <div id="mobile">
-              <a href="cart"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-cart3" viewBox="0 0 16 16">
-                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-              </svg></a>
-              <svg id="bar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layout-text-sidebar" viewBox="0 0 16 16">
-                <path d="M3.5 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM3 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z"/>
-                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm12-1v14h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 0H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h9z"/>
-              </svg>
-
-         </div>
-
-    </section>
     <section id="page-header" class="cart-header">
         <h2>#Check Out <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
@@ -40,39 +19,20 @@
                 </tr>
             </thead>
             <tbody>
+                {% for item in items %}
                 <tr>
                     <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
                         <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
                       </svg></td>
-                    <td><img src='{% static "static/assets/images/Cryton.jpg" %}' alt=""></td>
-                    <td>CRYTON Super Plastisizer</td>
-                    <td>$350</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$350</td>
+                    <td><img src='{{ item.product.image }}' alt=""></td>
+                    <td>{{ item.product.company }} {{ item.name }}</td>
+                    <td>{{ item.product.price|floatformat:1 }}$</td>
+                    <td><input type="number" value="{{ item.quantity }}"></td>
+                    <td>{{ item.get_total|floatformat:1  }}$</td>
+
                 </tr>
-                <tr>
-                    <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
-                      </svg></td>
-                    <td><img src='{% static "static/assets/images/SRA_101__shrinkage.png" %}' alt=""></td>
-                    <td>SRA Super Plastisizer</td>
-                    <td>$650</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$650</td>
-                </tr>
-                <tr>
-                    <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
-                      </svg></td>
-                    <td><img src='{% static "static/assets/images/SikaCem_125_Accelerator.webp" %}' alt=""></td>
-                    <td>SIKA Super Plastisizer</td>
-                    <td>$400</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$400</td>
-                </tr>
+                {% endfor %}
             </tbody>
         </table>
     </section>
@@ -89,7 +49,7 @@
                     <table>
                         <tr>
                             <td>Cart Subtotal</td>
-                            <td>$1500</td>
+                            <td>${{ order.get_cart_total|floatformat:1 }}</td>
                         </tr>
                         <tr>
                             <td>Shipping</td>
@@ -97,15 +57,15 @@
                         </tr>
                         <tr>
                             <td>Service</td>
-                            <td>$15</td>
+                            <td>${{ order.service|floatformat:1 }}</td>
                         </tr>
                         <tr>
-                            <td><strong>Totat</strong></td>
-                            <td><strong>$1515</strong></td>
+                            <td><strong>Total</strong></td>
+                            <td><strong>${{ order.gross_total|floatformat:1 }}</strong></td>
                         </tr>
 
                     </table>
-                    <button class="normal">Proceed to Payment</button>
+                    <button class="normal" onclick="window.location.href = 'checkout'">Proceed to Checkout</button>
         </div>
     </section>
     {% endblock content %}

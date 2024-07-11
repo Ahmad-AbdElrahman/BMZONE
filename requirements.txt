@@ -2,3 +2,5 @@ Django
 django-jazzmin
 django-crispy-forms
 gunicorn
+djangorestframework
+pillow

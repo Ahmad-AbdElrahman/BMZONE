@@ -23,3 +23,7 @@ def register_view(request):
         'form': form,
     }
     return render(request, "userauths/sign-up.html", context)
+
+def loginpage(request):
+    context = {}
+    return render(request, 'userauths/login.html', context)

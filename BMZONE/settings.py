@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-v!=%5l5(ib#u9tzwnc48a6oa6@g&b#d)c6ii$9jsnes=jgtbzb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['172.18.0.2','192.168.1.1','localhost','www.ahassanprog.tech','ahassanprog.tech','192.168.1.5']
+ALLOWED_HOSTS = ['127.0.0.1','172.18.0.2','192.168.1.1','localhost','www.ahassanprog.tech','ahassanprog.tech','192.168.1.5']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "crispy_forms",
+    "rest_framework",
 
     # custom apps
     'core',
@@ -144,4 +145,4 @@ JAZZMIN_SETTINGS = {
     'copyright': "BMZONE.com",
 }
 
-AUTH_USER_MODEL = 'userauths.User'
+# AUTH_USER_MODEL = 'userauths.User'
